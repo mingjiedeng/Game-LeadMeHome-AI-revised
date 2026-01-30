@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LeadMeHome - 带你回家 🚀
 
-## Available Scripts
+**现代网页版** - 基于 React + TypeScript + Tailwind CSS 重构的益智类游戏
 
-In the project directory, you can run:
+## 项目简介
 
-### `npm start`
+这是一个经典的"带你回家"益智游戏的现代化重写版本。玩家需要通过鼠标或触摸控制，将所有的 emoji 小球引导到安全的家中区域，同时避开黑洞的陷阱。
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 快速开始
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### 安装依赖
+```bash
+npm install
+```
 
-### `npm test`
+### 开发模式运行
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 构建生产版本
+```bash
+npm run build
+```
 
-### `npm run build`
+## 游戏玩法
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **目标**：将所有的 emoji 小球安全送回家
+2. **控制方式**：
+   - 鼠标移动控制引力点
+   - 触摸屏支持直接拖拽
+3. **障碍物**：
+   - 黑洞：会吞噬小球
+   - Wormhole：传送门
+   - 障碍墙：小球会反弹
+4. **特殊墙**：
+   - 加速墙（红色）：增加小球速度
+   - 减速墙（绿色）：降低小球速度
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 技术栈
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **前端框架**: React 18
+- **类型系统**: TypeScript
+- **样式方案**: Tailwind CSS
+- **构建工具**: Vite
+- **状态管理**: Redux Toolkit
+- **路由管理**: React Router v6
+- **游戏引擎**: Canvas API
 
-### `npm run eject`
+## 项目结构
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+src/
+├── components/     # React 组件
+│   ├── gamePage/  # 游戏页面
+│   ├── mainPage/  # 主页面
+│   └── ...
+├── game/          # 游戏核心逻辑
+│   ├── game.ts    # 游戏主类
+│   └── levelData.ts # 关卡数据
+├── store/         # Redux 状态管理
+├── router/        # 路由配置
+└── styles/        # 全局样式
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 开发说明
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+项目采用现代化的技术栈，具备以下特点：
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 🎯 **响应式设计** - 支持桌面端和移动端
+- ⚡ **高性能** - 使用 Canvas 实现流畅的游戏体验
+- 🎨 **美观界面** - Tailwind CSS 打造现代化 UI
+- 🔧 **易维护** - TypeScript + ESLint 保证代码质量
+- 📱 **移动友好** - 触摸控制优化
 
-## Learn More
+## 部署
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+游戏已部署在以下地址：
+https://your-game-url.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 许可证
 
-### Code Splitting
+MIT License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*由 Bobo 工作室重写并维护*
